@@ -12,6 +12,9 @@ export default {
     // this.api.getMovie({id:33410979}).then(res=>{
     //   console.log(res,888);
     // })
+    // this.api.getLessons().then(res=>{
+    //   console.log(res,888);
+    // })
   }
 }
 </script>

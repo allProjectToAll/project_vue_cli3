@@ -35,8 +35,7 @@ util.ajax.interceptors.request.use(
 util.ajax.interceptors.response.use(
   res => {
     console.log(res,"response")
-    // return response;
-    if(res.data.succ){
+    if(res.status == 200){
       //如果后台返回的json显示成功，pass
       return res;
     }else{

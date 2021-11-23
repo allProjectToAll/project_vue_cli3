@@ -12,7 +12,7 @@ export default {
         elSideBarSync:false, //menu组件外index页面的盒子是否展开
     },
     token:sessionStorage.getItem("token")|| 0,
-    url: process.env.NODE_ENV === 'development' ? 'http://119.96.168.93:8084/api/v1' : 'http://119.96.168.93:8084/api/v1',
+    url: '',
     languageObj:{},
     languageCodeObj:{},
     lang: ["","English", "简体中文", "日本語", "한국어","русский"]

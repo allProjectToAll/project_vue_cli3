@@ -5,4 +5,8 @@ export default {
     getMovie (data) {// https://movie.querydata.org/api?id=33410979
       return api.get('/api',data);
     },
-  }
+    // 获取所有课程的mock接口
+    getLessons (data) {// https://localhost:3000/lesson
+      return api.get('/lessons',data);
+    },
+}
