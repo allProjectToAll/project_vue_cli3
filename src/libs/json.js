@@ -3,8 +3,8 @@ const Menu = [
     {
         title:"首页",
         icon:"el-icon-s-home",
-        name:"demo",
-        path:"/demo",
+        name:"home",
+        path:"/",
         childMenu:[]
     },
     {
