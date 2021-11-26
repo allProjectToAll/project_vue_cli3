@@ -10,7 +10,7 @@
       <el-table :data="list" style="width: 100%" border>
         <el-table-column label="课程" property="title"></el-table-column>
         <el-table-column property="titleA" label="书籍"></el-table-column>
-        <el-table-column label="券">
+        <el-table-column label="课程">
           <template slot-scope="scope">
               <el-tag size="medium">{{ scope.row.titleB }}</el-tag>
           </template>
@@ -20,7 +20,7 @@
             <img :src="require('../assets/lesson/'+scope.row.imgleftsrc)" style="width:100px;" />
           </template>
         </el-table-column>
-        <el-table-column property="name" label="图片" width="120">
+        <el-table-column property="name" label="优惠券" width="120">
           <template slot-scope="scope">
             <el-popover trigger="hover" placement="top">
               <p>内容: {{ scope.row.detail }}</p>
@@ -47,7 +47,7 @@ export default {
     return {
       msg: '这是首页',
       form:{
-        lessionType:''
+        lessionType:'caihui'
       },
       array:[],
       list:[],
@@ -72,6 +72,17 @@ export default {
     changeType(val){
       this.list = this.array[val];
     },
+    handleEdit(index,row){
+
+    },
+    handleDelete(index,row){
+      this.$alert('确定要删除这条信息吗', '提示', {
+        confirmButtonText: '确定',
+        callback: action => {
+          console.log(row)
+        }
+      });
+    }
   }
 }
 </script>
