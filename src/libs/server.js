@@ -2,7 +2,7 @@ import axios from 'axios';
 // import VueCookies from 'vue-cookie'
 // import store from '@/store'
 // import { Message,MessageBox } from 'element-ui';
-import router from '@/router';
+// import router from '@/router';
 // import { getToken } from '@/utils/auth'
 // import Code from '@/utils/code'
 

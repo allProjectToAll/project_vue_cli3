@@ -7,10 +7,10 @@ export default {
     },
 
     count: 999,
-    menu:{
-        leftMenuOpen:false,//menu页面ul是否展开
-        elSideBarSync:false, //menu组件外index页面的盒子是否展开
-    },
+    // menu:{
+    //     leftMenuOpen:false,//menu页面ul是否展开
+    //     elSideBarSync:false, //menu组件外index页面的盒子是否展开
+    // },
     token:sessionStorage.getItem("token")|| 0,
     url: '',
     languageObj:{},

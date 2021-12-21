@@ -1,5 +1,5 @@
 
-import Util from './util'
+import server from './server'
 
 function constructUrl(params=''){
   if (typeof(params) != 'object') {
@@ -31,11 +31,11 @@ function deconstructUrl(url='') {
 export default  {
   get(url,params) {
     // http get
-    return Util.ajax.get(`${url}${constructUrl(params)}`)
+    return server.ajax.get(`${url}${constructUrl(params)}`)
   },
   post(url,data={}) {
     // http post
-    return Util.ajax.post(url, data);
+    return server.ajax.post(url, data);
   },
   getLocationSearch() {
     if(!window.location.search){
@@ -48,6 +48,6 @@ export default  {
       constructUrl(filter));
   },
   getBaseUrl(){
-    return Util.ajax.defaults
+    return server.ajax.defaults
   }
 }
