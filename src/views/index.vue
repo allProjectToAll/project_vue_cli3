@@ -1,7 +1,7 @@
 <template>
   <div class="index">
       这是首页
-      <img src="../assets/bg1.jpg" style="width:375px"/>
+      <img src="../assets/bg1.jpg"/>
   </div>
 </template>
 <script>
@@ -24,9 +24,12 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .index{
   width:100%;
   height:100%;
+  img{
+    width:375px;
+  }
 }
 </style>

@@ -21,7 +21,8 @@ export default {
 
 <style lang="scss">
 #app {
-    height: 100%;
+    width: 375px;
+    height: 100vh;
     > div {
         height: 100%;
     }

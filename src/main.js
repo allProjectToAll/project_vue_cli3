@@ -10,8 +10,10 @@ Vue.prototype.api = api;
 import jsonJs from '@/libs/json'
 Vue.prototype.jsonJs = jsonJs;
 
-import Adapt from './utils/adapt'
-Adapt(window).resize(375,'',480)
+// import Adapt from './utils/adapt'
+// Adapt(window).resize(375,'',480)
+
+import './utils/rem'
 
 Vue.config.productionTip = false
 
